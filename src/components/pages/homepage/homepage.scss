@@ -1,0 +1,49 @@
+@import '../../../assets/scss/global.scss';
+.homepage {
+    .jumbotron {
+        background: linear-gradient(170deg, #fff7e0 30%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffe6d0 40%, #ffefe9 70%);
+        small {
+            font-weight: 600;
+        }
+    }
+
+    .card {
+        position: relative;
+        .card-info {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #aaa;
+            font-size: 18px;
+            line-height: 1;
+        }
+        .card-title {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                margin-bottom: 5px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    &:hover {
+                        opacity: .9;
+                        text-decoration: none;
+                    }
+                }
+                i.fa {
+                    font-size: 10px;
+                    margin: 5px 0 0 10px;
+                }
+            }
+            
+        }
+        .card-text {
+            text-align: center;
+        }
+        .card-body {
+            padding: 20px;
+        }
+    }
+}

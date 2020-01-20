@@ -1,0 +1,13 @@
+.category-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .category-block {
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 15px 30px;
+        .card {}
+
+
+    }
+}

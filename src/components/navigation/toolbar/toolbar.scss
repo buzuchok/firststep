@@ -1,0 +1,39 @@
+@import '../../../assets/scss/global.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(111, 116, 142, 0.1);
+    z-index: 1;
+    .container-fluid {
+        display: flex;
+        align-items: center;
+    }
+    
+    .topmenu {
+        margin-left: auto;
+        @include max($medium) {
+            display: none;
+        }
+        ul.nav {
+            li.nav-item {
+                a.nav-link {
+                    font-size: 16px;
+                    i.fa {
+                        font-size: 20px;
+                        margin-right: 7px;
+                        &.fa-star {
+                            color: #ffd900;
+                        }
+                    }
+                    span {
+                    }
+                }
+            }
+        }
+    }
+}

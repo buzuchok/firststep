@@ -1,0 +1,36 @@
+.exercise-category-list {
+    padding: 0 20px 20px;
+    margin: 0;
+    .list-item {
+        display: inline-block;
+        list-style: none;
+        font-size: 14px;
+        margin: 0 7px 5px 0;
+        a.list-link {
+            background: #fdf6e8;
+            border-radius: 9px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+            display: inline-block;
+            &:hover {
+                background: #ffeedc;
+                text-decoration: none;
+            }
+            > div {
+                display: inline-block;
+                padding: 3px 0 3px 5px;
+                line-height: 16px;
+            }
+            .badge {
+                display: inline-block;
+                margin-left: 5px;
+                font-weight: bold;
+                background: #ffe6cc;
+                border-radius: 0 9px 9px 0;
+                padding: 4px 5px;
+                line-height: 16px;
+            }
+        }
+    }
+}

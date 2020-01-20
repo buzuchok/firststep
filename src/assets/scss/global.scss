@@ -1,0 +1,26 @@
+$brown: #332d2a;
+$red: #fc6f49;
+$redhover: #e45c37;
+$green: #ace944;
+
+$xxxsmall: 400px;
+$xxsmall: 480px;
+$xsmall: 600px;
+$small: 768px;
+$medium: 992px;
+$large: 1140px;
+$xlarge: 1200px;
+$xxlarge: 1400px;
+$xxxlarge: 1600px;
+
+@mixin min($device-width) { 
+    @media screen and (min-width: $device-width) {
+        @content 
+    }
+}
+  
+@mixin max($device-width) { 
+    @media screen and (max-width: $device-width - 1) {
+        @content 
+    }
+}

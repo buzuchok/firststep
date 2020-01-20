@@ -1,0 +1,123 @@
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+    background: linear-gradient(to bottom, #202c3c, #20283e);  
+}
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+}
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+.slideout-open .slideout-menu {
+    display: block;
+}
+html {
+    position: relative;
+    .panel-overflow {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(41, 47, 53, 0.5);
+        z-index: 99;
+        //animation: panelfade 1s;
+        //transition: opacity 1s ease;
+        transition: opacity 1s ease;
+        animation: panelfade 1s;
+    }
+    &.html-slideout-open {
+        .panel-overflow {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            // transition: opacity 1s ease;
+            // animation: panelfadeout 1s;
+        }
+    }
+}
+
+.mobilemenu {
+    ul.nav {
+        margin: 0;
+        padding: 0;
+        > li {
+            display: block;
+            list-style: none;
+            > a,
+            > span {
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                line-height: 20px;
+                font-size: 18px;
+                color: #fff;
+                cursor: pointer;
+                transition: all .3s;
+                background: #21283b;
+                &:hover,
+                &:focus,
+                &:active {
+                    background: #273046;
+                }
+                i.fa {
+                    font-size: 22px;
+                    margin-right: 10px;
+                    width: 22px;
+                    text-align: center;
+                    &.fa-star {
+                        color: #ffd900;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.panel {
+    background: #f8f9fe;
+    padding-top: 80px;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+}
+
+
+@-webkit-keyframes panelfade {
+    0%   { opacity: 0; visibility: hidden; }
+    1%   { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+  }
+  @-moz-keyframes panelfade {
+    0%   { opacity: 0; visibility: hidden; }
+    1%   { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+  }
+  @-o-keyframes panelfade {
+    0%   { opacity: 0; visibility: hidden; }
+    1%   { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+  }
+  @keyframes panelfade {
+    0%   { opacity: 0; visibility: hidden; }
+    1%   { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+  }
+  

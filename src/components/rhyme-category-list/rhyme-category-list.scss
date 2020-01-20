@@ -1,0 +1,43 @@
+.card-rhyme-category-list {
+    ul.list-group {
+        // border-top: 1px solid rgba(0,0,0,.125);
+        li.list-group-item {
+            padding: 0;
+            border: none;
+            a.list-group-link {
+                padding: 5px 20px;
+                display: block;
+                background: #fdf2f1;
+                &:hover {
+                    text-decoration: none;
+                    background: #fdeeec;
+                }
+                .list-group-name {
+                    margin-right: 5px;
+                }
+                .badge {
+                    background: rgba(255, 188, 168, .3);
+                    border-radius: 50%;
+                    min-width: 16px;
+                    text-align: center;
+                    height: 16px;
+                    padding: 0 2px;
+                    line-height: 16px;
+                }
+            }
+            &:nth-child(2n) {
+                a.list-group-link {
+                    background: #fffcfb;
+                    &:hover {
+                        background: #fdf8f7;
+                    }
+                }
+            }
+            &:last-child {
+                a {
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+        }
+    }
+}
