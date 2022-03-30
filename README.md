@@ -1,18 +1,3 @@
-create-react-app myapp
-cd myapp
-npm start
-
-
-npm i --save 
-react-router react-router-dom 
-node-sass
-interweave (Markup)
-react-slide-out
-
-
-
-
-## ****************************************
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
